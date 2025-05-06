@@ -1,10 +1,8 @@
+# 📽️ Libro Filmes
 
-__       __  .______   .______        ______    _______  __   __      .___  ___.  _______      _______.
-|  |     |  | |   _  \  |   _  \      /  __  \  |   ____||  | |  |     |   \/   | |   ____|    /       |
-|  |     |  | |  |_)  | |  |_)  |    |  |  |  | |  |__   |  | |  |     |  \  /  | |  |__      |   (----`
-|  |     |  | |   _  <  |      /     |  |  |  | |   __|  |  | |  |     |  |\/|  | |   __|      \   \    
-|  `----.|  | |  |_)  | |  |\  \----.|  `--'  | |  |     |  | |  `----.|  |  |  | |  |____ .----)   |   
-|_______||__| |______/  | _| `._____| \______/  |__|     |__| |_______||__|  |__| |_______||_______/
+🎬 Um app de catálogo de filmes feito com Angular, Tailwind e TMDb.
+                                                                        
+
 
 Projeto que simula um streaming de filmes, apenas para fins educacionais e pessoais.
 por favor não usar como fim comercial.
