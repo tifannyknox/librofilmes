@@ -23,7 +23,7 @@ Esse projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli)
 Para rodar o server do  projeto, use:
 
 ```bash
-ng serve
+npm start
 ```
 
 
