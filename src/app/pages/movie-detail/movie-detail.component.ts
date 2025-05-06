@@ -83,7 +83,7 @@ export class MovieDetailComponent {
   onMouseMove(event: MouseEvent, container: HTMLDivElement) {
     if (!this.isDragging) return;
     const x = event.pageX - container.offsetLeft;
-    const walk = (x - this.startX) * 2; // Ajusta a velocidade
+    const walk = (x - this.startX) * 2;
     container.scrollLeft = this.scrollLeft - walk;
   }
 

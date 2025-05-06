@@ -7,7 +7,6 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class IconService {
   constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
-    console.log('[IconService] Registrando ícones...');
     this.registerIcons();
   }
 

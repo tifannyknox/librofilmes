@@ -92,7 +92,7 @@ export class CatalogComponent implements OnInit, OnChanges {
     if (!this.isDragging) return;
     event.preventDefault();
     const x = event.pageX - container.offsetLeft;
-    const walk = (x - this.startX) * 2; // velocidade
+    const walk = (x - this.startX) * 2;
     container.scrollLeft = this.scrollLeft - walk;
   }
 }
