@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+//** Código de autoria de Danubia Barreto, apenas uso pessoal. peço que por gentileza, não usar para fins comerciais. *****//
+
+import {Component, inject} from '@angular/core';
+import {SidebarComponent} from './components/sidebar/sidebar.component';
+import {RouterOutlet} from '@angular/router';
+import {IconService} from './core/icon.service';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [SidebarComponent, RouterOutlet],
 })
 export class AppComponent {
-  title = 'libro-filmes';
+  private readonly iconService = inject(IconService);
 }

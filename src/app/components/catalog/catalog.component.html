@@ -1,0 +1,26 @@
+<div class="px-4">
+  <h2 class="text-white text-xl font-semibold mb-3">{{ title }}</h2>
+
+  <div
+    class="flex gap-4 overflow-x-auto cursor-grab select-none pb-2"
+    #scrollContainer
+    (mousedown)="onMouseDown($event, scrollContainer)"
+    (mouseleave)="onMouseLeave()"
+    (mouseup)="onMouseUp()"
+    (mousemove)="onMouseMove($event, scrollContainer)"
+  >
+    <div
+      *ngFor="let movie of movies"
+      [routerLink]="['/movie', movie.id]"
+      class="min-w-[160px] md:min-w-[180px] h-[240px] bg-neutral-800 rounded overflow-hidden flex-shrink-0 hover:scale-105 transition-transform"
+    >
+      <img
+        [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+        [alt]="movie.title"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
+
+

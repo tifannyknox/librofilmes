@@ -1,0 +1,30 @@
+<div class="min-h-screen bg-black ml-0 md:ml-19 pb-20 text-white p-6">
+  <form (submit)="search()" class="mb-6 flex gap-4">
+    <input
+      type="text"
+      [(ngModel)]="query"
+      name="search"
+      class="bg-neutral-800 text-white p-3 rounded w-full"
+      placeholder="Buscar filmes..."
+    />
+    <button type="submit" class="bg-red-600 px-4 py-2 rounded">Buscar</button>
+  </form>
+
+  <div *ngIf="results.length" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <a
+      *ngFor="let movie of results"
+      [routerLink]="['/movie', movie.id]"
+      class="bg-neutral-900 rounded overflow-hidden hover:scale-105 transition-transform"
+    >
+      <img
+        [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+        [alt]="movie.title"
+        class="w-full h-[300px] object-cover"
+      />
+      <div class="p-2">
+        <h3 class="text-sm font-semibold">{{ movie.title }}</h3>
+        <p class="text-xs text-gray-400">    {{ movie.release_date | date: 'dd/MM/yyyy' }}</p>
+      </div>
+    </a>
+  </div>
+</div>

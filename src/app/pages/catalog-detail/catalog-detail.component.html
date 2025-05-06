@@ -1,0 +1,31 @@
+<div class="pt-10 pb-20 bg-black text-white min-h-screen">
+
+<div class="flex flex-wrap justify-center gap-3 py-6">
+  <button
+    *ngFor="let genre of genres"
+    (click)="onSelectGenre(genre)"
+    [ngClass]="{
+      'bg-red-600 text-white': selectedGenre === genre,
+      'bg-gray-800 text-white': selectedGenre !== genre
+    }"
+    class="px-4 py-2 rounded transition-all"
+  >
+    {{ genre }}
+  </button>
+</div>
+
+<div class="pt-10 pb-20 ml-0 md:ml-19 bg-black text-white">
+  <ng-container *ngIf="selectedGenre !== 'Todos'">
+    <app-catalog [title]="selectedGenre"></app-catalog>
+  </ng-container>
+
+  <ng-container *ngIf="selectedGenre === 'Todos'">
+    <app-catalog title="Mais populares"></app-catalog>
+    <app-catalog title="Mais Avaliados"></app-catalog>
+    <app-catalog title="Filmes de Terror"></app-catalog>
+    <app-catalog title="Filmes de Comédia"></app-catalog>
+    <app-catalog title="Filmes de Drama"></app-catalog>
+    <app-catalog title="Animações"></app-catalog>
+  </ng-container>
+</div>
+</div>

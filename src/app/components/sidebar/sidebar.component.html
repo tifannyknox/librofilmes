@@ -1,0 +1,32 @@
+<nav
+  class="bg-black text-white
+         fixed z-50
+         w-full h-16 bottom-0
+         md:w-20 md:h-full md:top-0 md:left-0 md:bottom-auto
+         flex md:flex-col justify-around md:justify-start items-center
+         shadow-lg"
+>
+  <ul class="flex w-full justify-around md:flex-col md:items-center md:space-y-6 md:mt-6">
+    <li>
+      <a [routerLink]="['/']" routerLinkActive="text-gray-400" class="flex flex-col items-center group">
+        <mat-icon svgIcon="home" class="text-white text-2xl group-hover:text-blue-400"></mat-icon>
+        <span class="text-[10px] md:text-xs mt-1 group-hover:text-gray-400">Home</span>
+      </a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/catalogo']" routerLinkActive="text-gray-400" class="flex flex-col items-center group">
+        <mat-icon svgIcon="movies" class="text-white text-2xl group-hover:text-blue-400"></mat-icon>
+        <span class="text-[10px] md:text-xs mt-1 group-hover:text-gray-400">Catálogo</span>
+      </a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/search']" class="flex flex-col items-center group focus:outline-none" aria-label="Buscar">
+        <mat-icon svgIcon="search" class="text-white text-2xl group-hover:text-gray-400"></mat-icon>
+        <span class="text-[10px] md:text-xs mt-1 group-hover:text-gray-400">Pesquisar</span>
+      </a>
+
+    </li>
+  </ul>
+</nav>

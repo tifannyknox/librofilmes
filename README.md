@@ -1,59 +1,39 @@
-# LibroFilmes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+__       __  .______   .______        ______    _______  __   __      .___  ___.  _______      _______.
+|  |     |  | |   _  \  |   _  \      /  __  \  |   ____||  | |  |     |   \/   | |   ____|    /       |
+|  |     |  | |  |_)  | |  |_)  |    |  |  |  | |  |__   |  | |  |     |  \  /  | |  |__      |   (----`
+|  |     |  | |   _  <  |      /     |  |  |  | |   __|  |  | |  |     |  |\/|  | |   __|      \   \    
+|  `----.|  | |  |_)  | |  |\  \----.|  `--'  | |  |     |  | |  `----.|  |  |  | |  |____ .----)   |   
+|_______||__| |______/  | _| `._____| \______/  |__|     |__| |_______||__|  |__| |_______||_______/
+
+Projeto que simula um streaming de filmes, apenas para fins educacionais e pessoais.
+por favor não usar como fim comercial.
+
+## Stacks
+
+<a href="https://tailwindcss.com/">Tailwind v4.1</a><br>
+<a href="https://material.angular.dev/">Material v19.2.14</a><br>
+<a href="https://jestjs.io/pt-BR/">Jest v29.7</a><br>
+<a href="https://www.themoviedb.org/">The Movie Database</a><br>
+
+
+
+Esse projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli) versão 19.2.10.
 
 ## Development server
 
-To start a local development server, run:
+Para rodar o server do  projeto, use:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para rodar os testes unitários, use:
 
 ```bash
-ng generate component component-name
+jest
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Quando o servidor estiver em pé, navegue para a porta  `http://localhost:4200/`. que a aplicação aparecerá.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
